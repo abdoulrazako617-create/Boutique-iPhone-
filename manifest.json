@@ -1,0 +1,16 @@
+{
+  "name": "DAOUDI MULTISERVICES",
+  "short_name": "DAOUDI",
+  "description": "iPhone 11 à 18 Pro Max - Vente à Ouaga",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
