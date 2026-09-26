@@ -3,73 +3,72 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DAOUDI MULTI SERVICES - iPhone 11 à 18 | 57 86 49 08</title>
+<title>DAOUDI MULTI SERVICES - 57 86 49 08</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+*{margin:0;padding:0;box-sizing:border-box;font-family:system-ui}
 body{background:#f5f1e8}
-.header{background:#7a1a1a;color:white;padding:15px 20px;display:flex;justify-content:space-between;align-items:center}
-.header h1{font-size:22px;line-height:1.1}
-.phone{font-size:24px;font-weight:800}
-.banner{background:#fff8e7;padding:15px;text-align:center;border-bottom:3px solid #7a1a1a}
-.banner h2{font-size:28px;color:#2b0f0f}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;padding:15px;max-width:1200px;margin:0 auto}
-.card{background:white;border-radius:12px;padding:10px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,0.1)}
-.card img{width:80px;height:100px;object-fit:contain}
-.card h3{font-size:13px;margin:8px 0 4px}
-.card .price{color:#15803d;font-weight:800;font-size:15px;margin:5px 0}
-.btn{display:block;background:#15803d;color:white;text-decoration:none;padding:8px;border-radius:8px;font-size:12px;font-weight:700;margin-top:6px}
-.badge{background:#f59e0b;color:white;font-size:10px;padding:2px 6px;border-radius:10px;display:inline-block;margin-bottom:4px}
-.footer{background:#f5f1e8;text-align:center;padding:20px;border-top:4px solid; border-image:linear-gradient(to right,#009e49 33%,#ffce00 33%,#ffce00 66%,#ef2b2d 66%) 1}
+.header{background:#7a1a1a;color:white;padding:12px 15px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
+.phone-box{background:white;padding:8px 12px;border-radius:10px}
+.phone-box a{color:#7a1a1a!important;text-decoration:none!important;font-weight:900;font-size:18px}
+.banner{background:#fff8e7;text-align:center;padding:15px;border-bottom:4px solid #7a1a1a}
+.banner h2{font-size:22px}
+/* SLIDER QUI BOUGE SEUL */
+.slider{overflow:hidden;background:white;padding:12px 0;border-bottom:2px solid #eee}
+.track{display:flex;gap:12px;animation:scroll 25s linear infinite;width:max-content}
+.track:hover{animation-play-state:paused}
+@keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.card-slide{min-width:150px;background:#f9f9f9;border-radius:12px;padding:8px;text-align:center;box-shadow:0 2px 6px rgba(0,0,0,.1)}
+.card-slide img{width:90px;height:100px;object-fit:contain}
+.price{color:#15803d;font-weight:900;font-size:14px}
+.btn{display:block;background:#15803d;color:white;text-decoration:none;padding:7px;border-radius:8px;font-size:11px;font-weight:800;margin-top:5px}
+
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px;max-width:600px;margin:10px auto}
+.card{background:white;border-radius:14px;padding:10px;text-align:center}
+.card img{width:100%;height:110px;object-fit:contain}
+.footer{text-align:center;padding:20px}
 </style>
 </head>
 <body>
 <div class="header">
-<h1>🔧 DAOUDI MULTI SERVICES<br><span style="font-size:14px">iPhone Store • Ouagadougou</span></h1>
-<div class="phone">📞 57 86 49 08</div>
+<div>🔧 DAOUDI MULTI SERVICES<br><small>iPhone Store • Ouagadougou</small></div>
+<div class="phone-box"><a href="tel:+22657864908">📞 57 86<br>49 08</a></div>
 </div>
-<div class="banner">
-<h2>IPHONE 11 À 18 • CATALOGUE COMPLET</h2>
-<p>Tous les modèles • Garantie 6 mois • Paiement à la livraison • Livraison rapide à Ouagadougou</p>
+<div class="banner"><h2>IPHONE 11 À 18 • CATALOGUE COMPLET</h2><p>Défilement automatique →</p></div>
+
+<!-- BANDE QUI BOUGE SEULE DE GAUCHE À DROITE -->
+<div class="slider">
+<div class="track">
+<!-- 1er tour -->
+<div class="card-slide"><img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-11.jpg"><h3>iPhone 11</h3><div class="price">169 900F</div><a class="btn" href="https://wa.me/22657864908">🛒 COMMANDER</a></div>
+<div class="card-slide"><img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12.jpg"><h3>iPhone 12</h3><div class="price">195 000F</div><a class="btn" href="https://wa.me/22657864908">🛒 COMMANDER</a></div>
+<div class="card-slide"><img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13.jpg"><h3>iPhone 13</h3><div class="price">295 000F</div><a class="btn" href="https://wa.me/22657864908">🛒 COMMANDER</a></div>
+<div class="card-slide"><img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14.jpg"><h3>iPhone 14</h3><div class="price">349 900F</div><a class="btn" href="https://wa.me/22657864908">🛒 COMMANDER</a></div>
+<div class="card-slide"><img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15.jpg"><h3>iPhone 15</h3><div class="price">449 900F</div><a class="btn" href="https://wa.me/22657864908">🛒 COMMANDER</a></div>
+<div class="card-slide"><img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-16.jpg"><h3>iPhone 16</h3><div class="price">599 900F</div><a class="btn" href="https://wa.me/22657864908">🛒 COMMANDER</a></div>
+<div class="card-slide"><img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-16-pro-max.jpg"><h3>iPhone 17</h3><div class="price">750 000F</div><a class="btn" href="https://wa.me/22657864908">🛒 COMMANDER</a></div>
+<div class="card-slide"><img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-16-pro-max.jpg"><h3>iPhone 18 Pro Max</h3><div class="price">1 150 000F</div><a class="btn" href="https://wa.me/22657864908">🛒 COMMANDER</a></div>
+<!-- 2eme tour pour boucle infinie -->
+<div class="card-slide"><img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-11.jpg"><h3>iPhone 11</h3><div class="price">169 900F</div><a class="btn" href="https://wa.me/22657864908">🛒 COMMANDER</a></div>
+<div class="card-slide"><img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12.jpg"><h3>iPhone 12</h3><div class="price">195 000F</div><a class="btn" href="https://wa.me/22657864908">🛒 COMMANDER</a></div>
+<div class="card-slide"><img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13.jpg"><h3>iPhone 13</h3><div class="price">295 000F</div><a class="btn" href="https://wa.me/22657864908">🛒 COMMANDER</a></div>
+<div class="card-slide"><img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14.jpg"><h3>iPhone 14</h3><div class="price">349 900F</div><a class="btn" href="https://wa.me/22657864908">🛒 COMMANDER</a></div>
+<div class="card-slide"><img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15.jpg"><h3>iPhone 15</h3><div class="price">449 900F</div><a class="btn" href="https://wa.me/22657864908">🛒 COMMANDER</a></div>
+<div class="card-slide"><img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-16.jpg"><h3>iPhone 16</h3><div class="price">599 900F</div><a class="btn" href="https://wa.me/22657864908">🛒 COMMANDER</a></div>
+<div class="card-slide"><img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-16-pro-max.jpg"><h3>iPhone 17</h3><div class="price">750 000F</div><a class="btn" href="https://wa.me/22657864908">🛒 COMMANDER</a></div>
+<div class="card-slide"><img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-16-pro-max.jpg"><h3>iPhone 18 Pro Max</h3><div class="price">1 150 000F</div><a class="btn" href="https://wa.me/22657864908">🛒 COMMANDER</a></div>
 </div>
+</div>
+
 <div class="grid">
-<!-- iPhone 11 -->
-<div class="card"><img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-11-black-select-2019?wid=470"><h3>iPhone 11 64GB</h3><div class="price">169 900F</div><a class="btn" href="https://wa.me/22657864908?text=iPhone 11 64GB 169900F">📲 57 86 49 08</a></div>
-<div class="card"><img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-11-black-select-2019?wid=470"><h3>iPhone 11 128GB</h3><div class="price">185 000F</div><a class="btn" href="https://wa.me/22657864908?text=iPhone 11 128GB">📲 57 86 49 08</a></div>
-<div class="card"><img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-11-black-select-2019?wid=470"><h3>iPhone 11 256GB</h3><div class="price">205 000F</div><a class="btn" href="https://wa.me/22657864908?text=iPhone 11 256GB">📲 57 86 49 08</a></div>
-<!-- iPhone 12 -->
-<div class="card"><img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-12-black-select-2020?wid=470"><h3>iPhone 12 64GB</h3><div class="price">195 000F</div><a class="btn" href="https://wa.me/22657864908">📲 57 86 49 08</a></div>
-<div class="card"><img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-12-black-select-2020?wid=470"><h3>iPhone 12 128GB</h3><div class="price">207 500F</div><a class="btn" href="https://wa.me/22657864908?text=iPhone 12 128GB 207500F">📲 57 86 49 08</a></div>
-<div class="card"><img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-12-black-select-2020?wid=470"><h3>iPhone 12 256GB</h3><div class="price">235 000F</div><a class="btn" href="https://wa.me/22657864908">📲 57 86 49 08</a></div>
-<div class="card"><img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-12-pro-graphite-hero?wid=470"><h3>iPhone 12 Pro 128GB</h3><div class="price">260 000F</div><a class="btn" href="https://wa.me/22657864908">📲 57 86 49 08</a></div>
-<div class="card"><img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-12-pro-max-graphite-hero?wid=470"><h3>iPhone 12 Pro Max 128GB</h3><div class="price">290 000F</div><a class="btn" href="https://wa.me/22657864908">📲 57 86 49 08</a></div>
-<!-- iPhone 13 -->
-<div class="card"><img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-midnight-select-2021?wid=470"><h3>iPhone 13 128GB</h3><div class="price">295 000F</div><a class="btn" href="https://wa.me/22657864908">📲 57 86 49 08</a></div>
-<div class="card"><img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-midnight-select-2021?wid=470"><h3>iPhone 13 256GB</h3><div class="price">325 000F</div><a class="btn" href="https://wa.me/22657864908">📲 57 86 49 08</a></div>
-<div class="card"><img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-graphite-select?wid=470"><h3>iPhone 13 Pro 128GB</h3><div class="price">345 000F</div><a class="btn" href="https://wa.me/22657864908">📲 57 86 49 08</a></div>
-<div class="card"><img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-graphite-select?wid=470"><h3>iPhone 13 Pro Max 128GB</h3><div class="price">380 000F</div><a class="btn" href="https://wa.me/22657864908">📲 57 86 49 08</a></div>
-<!-- iPhone 14 -->
-<div class="card"><img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-14-midnight-select-202209?wid=470"><h3>iPhone 14 128GB</h3><div class="price">349 900F</div><a class="btn" href="https://wa.me/22657864908">📲 57 86 49 08</a></div>
-<div class="card"><img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-14-midnight-select-202209?wid=470"><h3>iPhone 14 256GB</h3><div class="price">529 900F</div><a class="btn" href="https://wa.me/22657864908">📲 57 86 49 08</a></div>
-<div class="card"><img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-14-pro-spaceblack-select?wid=470"><h3>iPhone 14 Pro 128GB</h3><div class="price">480 000F</div><a class="btn" href="https://wa.me/22657864908">📲 57 86 49 08</a></div>
-<div class="card"><img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-14-pro-max-spaceblack-select?wid=470"><h3>iPhone 14 Pro Max 128GB</h3><div class="price">550 000F</div><a class="btn" href="https://wa.me/22657864908">📲 57 86 49 08</a></div>
-<!-- iPhone 15 -->
-<div class="card"><img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-15-black-select-2023?wid=470"><h3>iPhone 15 128GB</h3><div class="price">449 900F</div><a class="btn" href="https://wa.me/22657864908">📲 57 86 49 08</a></div>
-<div class="card"><img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-15-black-select-2023?wid=470"><h3>iPhone 15 256GB</h3><div class="price">459 900F</div><a class="btn" href="https://wa.me/22657864908">📲 57 86 49 08</a></div>
-<div class="card"><img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-15-pro-max-blacktitanium-select?wid=470"><h3>iPhone 15 Pro Max 256GB</h3><div class="price">650 000F</div><a class="btn" href="https://wa.me/22657864908">📲 57 86 49 08</a></div>
-<!-- iPhone 16 -->
-<div class="card"><img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-16-black-select-2024?wid=470"><h3>iPhone 16 128GB</h3><div class="price">599 900F</div><a class="btn" href="https://wa.me/22657864908">📲 57 86 49 08</a></div>
-<div class="card"><img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-16-black-select-2024?wid=470"><h3>iPhone 16 256GB</h3><div class="price">689 900F</div><a class="btn" href="https://wa.me/22657864908">📲 57 86 49 08</a></div>
-<div class="card"><img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-16-pro-max-blacktitanium-select?wid=470"><h3>iPhone 16 Pro Max 256GB</h3><div class="price">850 000F</div><a class="btn" href="https://wa.me/22657864908">📲 57 86 49 08</a></div>
-<!-- iPhone 17 & 18 -->
-<div class="card"><img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-16-pro-max-blacktitanium-select?wid=470"><h3>iPhone 17 128GB</h3><div class="price">750 000F</div><a class="btn" href="https://wa.me/22657864908">📲 57 86 49 08</a></div>
-<div class="card"><img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-16-pro-max-blacktitanium-select?wid=470"><h3>iPhone 17 Pro Max 256GB</h3><div class="price">950 000F</div><a class="btn" href="https://wa.me/22657864908">📲 57 86 49 08</a></div>
-<div class="card"><div class="badge">PRÉ-COMMANDE</div><img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-16-pro-max-blacktitanium-select?wid=470"><h3>iPhone 18 128GB</h3><div class="price">890 000F</div><a class="btn" href="https://wa.me/22657864908">📲 57 86 49 08</a></div>
-<div class="card"><div class="badge">PRÉ-COMMANDE</div><img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-16-pro-max-blacktitanium-select?wid=470"><h3>iPhone 18 Pro Max 256GB</h3><div class="price">1 150 000F</div><a class="btn" href="https://wa.me/22657864908?text=Pre-commande iPhone 18 Pro Max">📲 57 86 49 08</a></div>
+<div class="card"><img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-11.jpg"><h3>iPhone 11 64GB</h3><div class="price">169 900F</div><a class="btn" href="https://wa.me/22657864908">🛒 COMMANDER</a></div>
+<div class="card"><img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-11.jpg"><h3>iPhone 11 128GB</h3><div class="price">185 000F</div><a class="btn" href="https://wa.me/22657864908">🛒 COMMANDER</a></div>
+<div class="card"><img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12.jpg"><h3>iPhone 12 128GB</h3><div class="price">207 500F</div><a class="btn" href="https://wa.me/22657864908">🛒 COMMANDER</a></div>
+<div class="card"><img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13.jpg"><h3>iPhone 13 128GB</h3><div class="price">295 000F</div><a class="btn" href="https://wa.me/22657864908">🛒 COMMANDER</a></div>
+<div class="card"><img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14.jpg"><h3>iPhone 14 128GB</h3><div class="price">349 900F</div><a class="btn" href="https://wa.me/22657864908">🛒 COMMANDER</a></div>
+<div class="card"><img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15.jpg"><h3>iPhone 15 128GB</h3><div class="price">449 900F</div><a class="btn" href="https://wa.me/22657864908">🛒 COMMANDER</a></div>
+<div class="card"><img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-16.jpg"><h3>iPhone 16 128GB</h3><div class="price">599 900F</div><a class="btn" href="https://wa.me/22657864908">🛒 COMMANDER</a></div>
+<div class="card"><img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-16-pro-max.jpg"><h3>iPhone 18 Pro Max</h3><div class="price">1 150 000F</div><a class="btn" href="https://wa.me/22657864908">🛒 COMMANDER</a></div>
 </div>
-<div class="footer">
-<strong>📞 CONTACT & COMMANDE : 57 86 49 08</strong><br>
-DAOUDI MULTI SERVICES • Ouagadougou, Burkina Faso • 7j/7 • Livraison rapide<br><br>
-<a style="background:#7a1a1a;color:white;padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:800" href="https://wa.me/22657864908">💬 COMMANDER SUR WHATSAPP - 57 86 49 08</a>
-</div>
+<div class="footer"><a style="background:#7a1a1a;color:white;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:900" href="https://wa.me/22657864908">💬 COMMANDER SUR WHATSAPP - 57 86 49 08</a></div>
 </body>
 </html>
