@@ -7,86 +7,75 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:system-ui}
 body{background:#f5f1e8}
-.header{background:#7a1a1a;color:white;padding:12px 15px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:20}
-.hero{background:linear-gradient(135deg,#7a1a1a,#b91c1c);color:white;padding:14px;display:flex;gap:12px;align-items:center}
-.hero img{width:115px;height:140px;object-fit:cover;border-radius:16px;border:3px solid #ffce00}
+.header{background:#7a1a1a;color:white;padding:14px 16px;display:flex;justify-content:space-between;align-items:center}
+.hero{background:linear-gradient(135deg,#7a1a1a,#b91c1c);color:white;padding:16px;display:flex;gap:14px;align-items:center}
+.hero img{width:120px;height:150px;object-fit:cover;border-radius:16px;border:3px solid #ffce00}
 .phrase{background:#ffce00;color:#7a1a1a;text-align:center;padding:10px;font-weight:900;font-size:13px}
-.row-title{background:#7a1a1a;color:white;padding:7px 15px;font-weight:800;font-size:13px;margin-top:14px;display:flex;justify-content:space-between}
-.slider-wrap{overflow-x:auto;scrollbar-width:none;background:white;padding:12px 0;scroll-behavior:smooth}
-.slider-wrap::-webkit-scrollbar{display:none}
-.track{display:flex;gap:10px;width:max-content;padding:0 12px}
-.card{min-width:150px;background:#faf6eb;border-radius:14px;padding:10px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.1);flex-shrink:0;border:1px solid #f0e6c8}
-.card img{width:80px;height:92px;object-fit:contain}
-.price{color:#15803d;font-weight:900;font-size:14px}
-.btn{display:block;background:#15803d;color:white;text-decoration:none;padding:7px;border-radius:8px;font-size:11px;font-weight:800;margin-top:5px}
-.footer{text-align:center;padding:22px;background:#fff8e7}
+.title-bar{background:#7a1a1a;color:white;padding:10px 16px;font-weight:900;text-align:center;font-size:15px;margin-top:16px;letter-spacing:.5px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:12px;background:white}
+.card{background:#fffef7;border-radius:18px;padding:14px 8px;text-align:center;box-shadow:0 3px 10px rgba(0,0,0,.12);border:2px solid #f5e6b8}
+.card img{width:130px;height:140px;object-fit:contain;background:white;border-radius:12px}
+.card h3{font-size:13px;margin:10px 0 4px;font-weight:800}
+.price{color:#15803d;font-weight:900;font-size:16px;margin:4px 0}
+.btn{display:block;background:#15803d;color:white;text-decoration:none;padding:10px;border-radius:10px;font-size:12px;font-weight:900;margin-top:8px}
+.single{grid-column:1/-1;max-width:50%;margin:0 auto;width:100%}
+.footer{text-align:center;padding:24px;background:#fff8e7}
+@media(min-width:600px){.grid{grid-template-columns:1fr 1fr 1fr}.single{max-width:33%}}
 </style>
 </head>
 <body>
 <div class="header">
-<div>🔧 DAOUDI MULTI SERVICES<br><small>Ouagadougou • iPhone Store</small></div>
-<div style="background:white;color:#7a1a1a;padding:8px 12px;border-radius:10px;font-weight:900">📞 57 86 49 08</div>
+<div>🔧 <b>DAOUDI MULTI SERVICES</b><br><small>Ouagadougou • iPhone Store</small></div>
+<div style="background:white;color:#7a1a1a;padding:8px 14px;border-radius:12px;font-weight:900">📞 57 86 49 08</div>
 </div>
+
 <div class="hero">
 <img src="https://i.postimg.cc/NjBfLD0X/6befb361-e899-4649-8348-f3b2b5564233.jpg">
 <div>
 <h2>DAOUDI MULTI SERVICES</h2>
-<p style="font-size:12px">Le Patron • iPhone 11 à 18</p>
-<div style="margin-top:8px;background:rgba(0,0,0,.35);padding:8px;border-radius:10px;font-size:12px;font-weight:800">
+<p style="font-size:13px;margin-top:2px">Le Patron</p>
+<div style="margin-top:8px;background:rgba(0,0,0,.35);padding:9px;border-radius:10px;font-size:12px;font-weight:800;line-height:1.3">
 🦅 "Le Corbeau vole haut, les prix volent bas! Chez Daoudi, le prix effraie les concurrents, pas les clients!"
 </div>
-<p style="margin-top:6px;font-size:11px">📞 57 86 49 08 • Garantie 6 mois • Livraison 24h</p>
 </div>
 </div>
-<div class="phrase">⚡ HABILLÉ EN PATRON, PRIX EN VRAI BOSS - IPHONE ORIGINAL GARANTI! ⚡</div>
+<div class="phrase">⚡ HABILLÉ EN PATRON, PRIX EN VRAI BOSS - GARANTIE 6 MOIS ⚡</div>
 
-<div class="row-title"><span>IPHONE 12 PRO - PRIX NORMAL</span></div>
-<div class="slider-wrap"><div class="track">
-<div class="card"><img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12-pro--.jpg"><h3>12 Pro 128GB</h3><div class="price">165 000F</div><a class="btn" href="https://wa.me/22657864908?text=12 Pro 128GB 165000F">🛒 COMMANDER</a></div>
-<div class="card"><img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12-pro--.jpg"><h3>12 Pro 256GB</h3><div class="price">180 000F</div><a class="btn" href="https://wa.me/22657864908?text=12 Pro 256GB 180000F">🛒 COMMANDER</a></div>
-</div></div>
+<div class="title-bar">IPHONE 12 PRO - PRIX NORMAL</div>
+<div class="grid">
+<div class="card"><img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-pro-blue-hero?wid=470&hei=556&fmt=png-alpha"><h3>12 Pro 128GB</h3><div class="price">165 000F</div><a class="btn" href="https://wa.me/22657864908?text=12 Pro 128GB 165000F">🛒 COMMANDER</a></div>
+<div class="card"><img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-pro-blue-hero?wid=470&hei=556&fmt=png-alpha"><h3>12 Pro 256GB</h3><div class="price">180 000F</div><a class="btn" href="https://wa.me/22657864908?text=12 Pro 256GB 180000F">🛒 COMMANDER</a></div>
+</div>
 
-<div class="row-title"><span>IPHONE 13 PRO</span></div>
-<div class="slider-wrap"><div class="track">
-<div class="card"><img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-pro.jpg"><h3>13 Pro 256GB</h3><div class="price">230 000F</div><a class="btn" href="https://wa.me/22657864908?text=13 Pro 256GB 230000F">🛒 COMMANDER</a></div>
-</div></div>
+<div class="title-bar">IPHONE 13 PRO</div>
+<div class="grid">
+<div class="card single"><img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pro-silver-select?wid=470&hei=556&fmt=png-alpha"><h3>13 Pro 256GB</h3><div class="price">230 000F</div><a class="btn" href="https://wa.me/22657864908?text=13 Pro 256GB 230000F">🛒 COMMANDER</a></div>
+</div>
 
-<div class="row-title"><span>IPHONE 14 PRO / PRO MAX</span></div>
-<div class="slider-wrap"><div class="track">
-<div class="card"><img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14-pro.jpg"><h3>14 Pro 256GB</h3><div class="price">275 000F</div><a class="btn" href="https://wa.me/22657864908?text=14 Pro 256GB 275000F">🛒 COMMANDER</a></div>
-<div class="card"><img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14-pro-max.jpg"><h3>14 Pro Max 256GB</h3><div class="price">330 000F</div><a class="btn" href="https://wa.me/22657864908?text=14 Pro Max 256GB 330000F">🛒 COMMANDER</a></div>
-</div></div>
+<div class="title-bar">IPHONE 14 PRO / PRO MAX</div>
+<div class="grid">
+<div class="card"><img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-model-unselect-gallery-1-202209?wid=5120&hei=2880&fmt=p-jpg"><h3>14 Pro 256GB</h3><div class="price">275 000F</div><a class="btn" href="https://wa.me/22657864908?text=14 Pro 256GB">🛒 COMMANDER</a></div>
+<div class="card"><img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-max-model-unselect-gallery-1-202209?wid=5120&hei=2880&fmt=p-jpg"><h3>14 Pro Max 256GB</h3><div class="price">330 000F</div><a class="btn" href="https://wa.me/22657864908?text=14 Pro Max 256GB">🛒 COMMANDER</a></div>
+</div>
 
-<div class="row-title"><span>IPHONE 15 PRO MAX</span></div>
-<div class="slider-wrap"><div class="track">
-<div class="card"><img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15-pro-max.jpg"><h3>15 Pro Max 256GB</h3><div class="price">380 000F</div><a class="btn" href="https://wa.me/22657864908?text=15 Pro Max 256GB 380000F">🛒 COMMANDER</a></div>
-</div></div>
+<div class="title-bar">IPHONE 15 PRO MAX</div>
+<div class="grid">
+<div class="card single"><img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-max-naturaltitanium-select?wid=470&hei=556&fmt=png-alpha"><h3>15 Pro Max 256GB</h3><div class="price">380 000F</div><a class="btn" href="https://wa.me/22657864908?text=15 Pro Max 256GB">🛒 COMMANDER</a></div>
+</div>
 
-<div class="row-title"><span>IPHONE 16 / 17 / 18 PRO MAX - NOUVEAUTÉ</span></div>
-<div class="slider-wrap"><div class="track">
-<div class="card"><img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-16-pro-max.jpg"><h3>16 Pro Max 256GB</h3><div class="price">570 000F</div><a class="btn" href="https://wa.me/22657864908?text=16 Pro Max 256GB 570000F">🛒 COMMANDER</a></div>
-<div class="card"><img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15-pro-max.jpg"><h3>17 Pro 256GB</h3><div class="price">720 000F</div><a class="btn" href="https://wa.me/22657864908?text=17 Pro 256GB 720000F">🛒 COMMANDER</a></div>
-<div class="card"><img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15-pro-max.jpg"><h3>17 Pro Max</h3><div class="price">800 000F</div><a class="btn" href="https://wa.me/22657864908?text=17 Pro Max 800000F">🛒 COMMANDER</a></div>
-<div class="card"><img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-16-pro-max.jpg"><h3>18 Pro Max 256GB</h3><div class="price">1 250 000F</div><a class="btn" href="https://wa.me/22657864908?text=18 Pro Max 256GB 1250000F">🛒 COMMANDER</a></div>
-</div></div>
+<div class="title-bar">IPHONE 16 / 17 / 18 PRO MAX - NOUVEAUTÉ</div>
+<div class="grid">
+<div class="card"><img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-pro-max-deserttitanium-select?wid=470&hei=556&fmt=png-alpha"><h3>16 Pro Max 256GB</h3><div class="price">570 000F</div><a class="btn" href="https://wa.me/22657864908">🛒 COMMANDER</a></div>
+<div class="card"><img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-pro-max-deserttitanium-select?wid=470&hei=556&fmt=png-alpha"><h3>17 Pro 256GB</h3><div class="price">720 000F</div><a class="btn" href="https://wa.me/22657864908">🛒 COMMANDER</a></div>
+<div class="card"><img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-pro-max-deserttitanium-select?wid=470&hei=556&fmt=png-alpha"><h3>17 Pro Max</h3><div class="price">800 000F</div><a class="btn" href="https://wa.me/22657864908">🛒 COMMANDER</a></div>
+<div class="card"><img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-pro-max-deserttitanium-select?wid=470&hei=556&fmt=png-alpha"><h3>18 Pro Max 256GB</h3><div class="price">1 250 000F</div><a class="btn" href="https://wa.me/22657864908">🛒 COMMANDER</a></div>
+</div>
 
 <div class="footer">
-<a style="background:#7a1a1a;color:white;padding:14px 28px;border-radius:12px;text-decoration:none;font-weight:900;display:inline-block" href="https://wa.me/22657864908">💬 COMMANDER - 57 86 49 08</a>
-<p style="margin-top:12px;font-size:11px;color:#666">🦅 Le Corbeau vole haut, les prix volent bas! • Garantie 6 mois</p>
+<img src="https://i.postimg.cc/NjBfLD0X/6befb361-e899-4649-8348-f3b2b5564233.jpg" style="width:70px;height:85px;object-fit:cover;border-radius:12px;border:3px solid #7a1a1a;margin-bottom:10px">
+<div><b>DAOUDI MULTI SERVICES</b><br>📞 57 86 49 08 - Ouagadougou</div><br>
+<a style="background:#7a1a1a;color:white;padding:16px 32px;border-radius:14px;text-decoration:none;font-weight:900;display:inline-block" href="https://wa.me/22657864908">💬 COMMANDER SUR WHATSAPP</a>
+<p style="margin-top:14px;font-size:12px;color:#555">🦅 Le Corbeau vole haut, les prix volent bas! • Paiement à la livraison</p>
 </div>
-
-<script>
-const rows=document.querySelectorAll('.slider-wrap');
-rows.forEach(el=>{
-  let pos=0,dir=1;
-  setInterval(()=>{
-    if(!el.matches(':hover')){
-      pos+=dir*160;
-      if(pos>=el.scrollWidth-el.clientWidth || pos<=0) dir*=-1;
-      el.scrollTo({left:pos,behavior:'smooth'});
-    }
-  },5000);
-});
-</script>
 </body>
 </html>
