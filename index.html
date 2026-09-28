@@ -1,60 +1,81 @@
-<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DAOUDI MULTI SERVICES</title><style>*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}body{background:#fff}.header{background:#b30000;display:flex;align-items:center;padding:10px;gap:10px}.photo{width:80px;height:80px;border-radius:12px;border:3px solid #ffcc00;overflow:hidden;background:#fff;flex-shrink:0}.photo img{width:100%;height:100%;object-fit:cover;object-position:top}.header h1{color:#ffcc00;font-size:17px;line-height:1}.header h1 b{color:#fff}.header small{color:#fff;font-size:10px;display:block;margin-top:3px}.right{margin-left:auto;display:flex;flex-direction:column;gap:4px}.badge{background:#000;color:#ffcc00;border:1px solid #ffcc00;padding:5px 10px;border-radius:20px;font-size:11px;font-weight:900}.yellow{background:#ffcc00;color:#000;text-align:center;padding:8px;font-weight:900;font-size:12px}.colonne{margin:8px;border:2px solid #b30000;border-radius:10px;overflow:hidden}.colonne-titre{background:#b30000;color:#fff;padding:8px 12px;font-weight:900;font-size:13px;display:flex;justify-content:space-between}.colonne-titre span{background:#ffcc00;color:#000;padding:3px 10px;border-radius:15px}.scroller{overflow:hidden;background:#fff5f5;padding:10px 0}.track{display:flex;gap:12px;width:max-content}.card{min-width:150px;background:#fff;border:2px solid #ffcc00;border-radius:12px;padding:6px;text-align:center;box-shadow:0 2px 6px rgba(0,0,0,.15)}.img{width:100%;height:120px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:40px}.model{font-size:12px;font-weight:800;margin-top:4px}.price{color:#b30000;font-weight:900;font-size:16px}.btn{background:#25D366;color:#fff;border:none;width:100%;padding:8px;border-radius:20px;font-size:12px;font-weight:900;margin-top:5px}.footer{background:#000;color:#fff;text-align:center;padding:15px;font-weight:800}.footer a{color:#25D366;text-decoration:none}</style></head><body>
+<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DAOUDI MULTI SERVICES</title><style>*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}body{background:#f2f2f2}.header{background:#b30000;display:flex;align-items:center;padding:10px;gap:10px}.photo{width:80px;height:80px;border-radius:12px;border:3px solid #ffcc00;overflow:hidden;background:#fff;flex-shrink:0}.photo img{width:100%;height:100%;object-fit:cover;object-position:top}.header h1{color:#ffcc00;font-size:17px;line-height:1}.header h1 b{color:#fff}.header small{color:#fff;font-size:10px;display:block;margin-top:3px}.right{margin-left:auto;display:flex;flex-direction:column;gap:4px}.badge{background:#000;color:#ffcc00;border:1px solid #ffcc00;padding:5px 10px;border-radius:20px;font-size:11px;font-weight:900}.yellow{background:#ffcc00;color:#000;text-align:center;padding:8px;font-weight:900;font-size:12px}.colonne{margin:10px;border:2px solid #b30000;border-radius:12px;overflow:hidden;background:#fff}.colonne-titre{background:#b30000;color:#fff;padding:9px 12px;font-weight:900;font-size:14px;display:flex;justify-content:space-between}.colonne-titre span{background:#ffcc00;color:#000;padding:4px 12px;border-radius:15px;font-size:13px}.scroller{overflow:hidden;background:#fff;padding:12px 0}.track{display:flex;gap:14px;width:max-content}.card{min-width:190px;background:#fff;border:3px solid #ffcc00;border-radius:16px;padding:10px;text-align:center;box-shadow:0 4px 10px rgba(0,0,0,.25)}
+/* iPHONE GROS RECONNAISSABLE */
+.iphone{width:130px;height:175px;margin:0 auto;background:linear-gradient(145deg,#1a1a1a,#2a2a2a);border-radius:22px;border:3px solid #000;position:relative;box-shadow:inset 0 0 10px #000,0 3px 0 #000;padding:8px}
+.iphone .notch{width:55px;height:12px;background:#000;border-radius:0 0 8px 8px;margin:0 auto;position:absolute;top:0;left:50%;transform:translateX(-50%)}
+.iphone .cam-block{width:58px;height:58px;background:#111;border-radius:14px;position:absolute;top:18px;left:8px;display:flex;flex-wrap:wrap;gap:4px;padding:5px;border:1px solid #333}
+.iphone .cam-block i{width:20px;height:20px;background:radial-gradient(circle,#222,#000);border-radius:50%;display:block;border:1px solid #444;box-shadow:inset 0 1px 2px #666}
+.iphone .flash{width:10px;height:10px;background:#ffe99a;border-radius:50%;position:absolute;top:24px;left:74px;box-shadow:0 0 4px #ffcc00}
+.iphone .apple{position:absolute;bottom:25px;left:50%;transform:translateX(-50%);font-size:28px;opacity:.15}
+.iphone.blue{background:linear-gradient(145deg,#1e3a5f,#2a5a8a)}
+.iphone.graphite{background:linear-gradient(145deg,#2a2a2a,#4a4a4a)}
+.iphone.gold{background:linear-gradient(145deg,#c9a86a,#e6c88a)}
+.iphone.purple{background:linear-gradient(145deg,#3a1a5a,#6a2a8a)}
+.iphone.black{background:linear-gradient(145deg,#000,#222)}
+.iphone.titan{background:linear-gradient(145deg,#5a5a5a,#8a8a8a)}
+.iphone.red{background:linear-gradient(145deg,#8a1a1a,#b30000)}
+.model{font-size:13px;font-weight:900;margin-top:8px}.price{color:#b30000;font-weight:900;font-size:20px;margin-top:2px}.btn{background:#25D366;color:#fff;border:none;width:100%;padding:9px;border-radius:25px;font-size:13px;font-weight:900;margin-top:7px;cursor:pointer}.footer{background:#000;color:#fff;text-align:center;padding:15px;font-weight:800}.footer a{color:#25D366;text-decoration:none}</style></head><body>
 <div class="header"><div class="photo"><img src="https://i.postimg.cc/NjBfLD0X/6befb361-e899-4649-8348-f3b2b.jpg"></div><div><h1>DAOUDI MULTI<br><b>SERVICES</b><br><small>🐦 Le Corbeau vole haut!</small></h1></div><div class="right"><div class="badge">📞57 86 49 08</div><div class="badge">📞67 49 48 98</div></div></div>
-<div class="yellow">🔥 iPHONE 12 à 18 - 3 PHOTOS IDENTIQUES - BOUGE CHAQUE 5 SECONDES 🔥</div>
+<div class="yellow">🔥 iPHONE GROS - ON RECONNAIT DIRECT - 12 PRO + 12 PRO MAX 🔥</div>
 
-<div class="colonne"><div class="colonne-titre">COLONNE 1: iPhone 12 Pro Max <span>180 000F</span></div><div class="scroller"><div class="track">
-<div class="card"><div class="img" style="background:#dbeafe">📱</div><div class="model">12 Pro Max 128GB</div><div class="price">180 000F</div><button class="btn" onclick="cmd('iPhone 12 Pro Max 128GB','180 000F')">COMMANDER</button></div>
-<div class="card"><div class="img" style="background:#dbeafe">📱</div><div class="model">12 Pro Max 128GB</div><div class="price">180 000F</div><button class="btn" onclick="cmd('iPhone 12 Pro Max 128GB','180 000F')">COMMANDER</button></div>
-<div class="card"><div class="img" style="background:#dbeafe">📱</div><div class="model">12 Pro Max 128GB</div><div class="price">180 000F</div><button class="btn" onclick="cmd('iPhone 12 Pro Max 128GB','180 000F')">COMMANDER</button></div>
+<div class="colonne"><div class="colonne-titre">COLONNE 1: iPhone 12 128GB <span>150 000F</span></div><div class="scroller"><div class="track">
+<div class="card"><div class="iphone blue"><div class="notch"></div><div class="cam-block"><i></i><i></i><i></i></div><div class="flash"></div><div class="apple"></div></div><div class="model">iPhone 12 128GB</div><div class="price">150 000F</div><button class="btn" onclick="cmd('iPhone 12 128GB','150 000F')">COMMANDER</button></div>
+<div class="card"><div class="iphone blue"><div class="notch"></div><div class="cam-block"><i></i><i></i><i></i></div><div class="flash"></div><div class="apple"></div></div><div class="model">iPhone 12 128GB</div><div class="price">150 000F</div><button class="btn" onclick="cmd('iPhone 12 128GB','150 000F')">COMMANDER</button></div>
+<div class="card"><div class="iphone blue"><div class="notch"></div><div class="cam-block"><i></i><i></i><i></i></div><div class="flash"></div><div class="apple"></div></div><div class="model">iPhone 12 128GB</div><div class="price">150 000F</div><button class="btn" onclick="cmd('iPhone 12 128GB','150 000F')">COMMANDER</button></div>
 </div></div></div>
 
-<div class="colonne"><div class="colonne-titre">COLONNE 2: iPhone 13 Pro Max <span>230 000F</span></div><div class="scroller"><div class="track">
-<div class="card"><div class="img" style="background:#bfdbfe">📱</div><div class="model">13 Pro Max 128GB</div><div class="price">230 000F</div><button class="btn" onclick="cmd('13 Pro Max','230 000F')">COMMANDER</button></div>
-<div class="card"><div class="img" style="background:#bfdbfe">📱</div><div class="model">13 Pro Max 128GB</div><div class="price">230 000F</div><button class="btn" onclick="cmd('13 Pro Max','230 000F')">COMMANDER</button></div>
-<div class="card"><div class="img" style="background:#bfdbfe">📱</div><div class="model">13 Pro Max 128GB</div><div class="price">230 000F</div><button class="btn" onclick="cmd('13 Pro Max','230 000F')">COMMANDER</button></div>
+<div class="colonne"><div class="colonne-titre">COLONNE 2: iPhone 12 Pro 128GB <span>165 000F</span></div><div class="scroller"><div class="track">
+<div class="card"><div class="iphone graphite"><div class="notch"></div><div class="cam-block"><i></i><i></i><i></i></div><div class="flash"></div><div class="apple"></div></div><div class="model">12 Pro 128GB</div><div class="price">165 000F</div><button class="btn" onclick="cmd('12 Pro 128GB','165 000F')">COMMANDER</button></div>
+<div class="card"><div class="iphone graphite"><div class="notch"></div><div class="cam-block"><i></i><i></i><i></i></div><div class="flash"></div><div class="apple"></div></div><div class="model">12 Pro 128GB</div><div class="price">165 000F</div><button class="btn" onclick="cmd('12 Pro 128GB','165 000F')">COMMANDER</button></div>
+<div class="card"><div class="iphone graphite"><div class="notch"></div><div class="cam-block"><i></i><i></i><i></i></div><div class="flash"></div><div class="apple"></div></div><div class="model">12 Pro 128GB</div><div class="price">165 000F</div><button class="btn" onclick="cmd('12 Pro 128GB','165 000F')">COMMANDER</button></div>
 </div></div></div>
 
-<div class="colonne"><div class="colonne-titre">COLONNE 3: iPhone 14 Pro Max <span>330 000F</span></div><div class="scroller"><div class="track">
-<div class="card"><div class="img" style="background:#e9d5ff">📱</div><div class="model">14 Pro Max 256GB</div><div class="price">330 000F</div><button class="btn" onclick="cmd('14 Pro Max','330 000F')">COMMANDER</button></div>
-<div class="card"><div class="img" style="background:#e9d5ff">📱</div><div class="model">14 Pro Max 256GB</div><div class="price">330 000F</div><button class="btn" onclick="cmd('14 Pro Max','330 000F')">COMMANDER</button></div>
-<div class="card"><div class="img" style="background:#e9d5ff">📱</div><div class="model">14 Pro Max 256GB</div><div class="price">330 000F</div><button class="btn" onclick="cmd('14 Pro Max','330 000F')">COMMANDER</button></div>
+<div class="colonne"><div class="colonne-titre">COLONNE 3: iPhone 12 Pro Max 128GB <span>180 000F</span></div><div class="scroller"><div class="track">
+<div class="card"><div class="iphone graphite"><div class="notch"></div><div class="cam-block"><i></i><i></i><i></i></div><div class="flash"></div><div class="apple"></div></div><div class="model">12 Pro Max 128GB</div><div class="price">180 000F</div><button class="btn" onclick="cmd('12 Pro Max 128GB','180 000F')">COMMANDER</button></div>
+<div class="card"><div class="iphone graphite"><div class="notch"></div><div class="cam-block"><i></i><i></i><i></i></div><div class="flash"></div><div class="apple"></div></div><div class="model">12 Pro Max 128GB</div><div class="price">180 000F</div><button class="btn" onclick="cmd('12 Pro Max 128GB','180 000F')">COMMANDER</button></div>
+<div class="card"><div class="iphone graphite"><div class="notch"></div><div class="cam-block"><i></i><i></i><i></i></div><div class="flash"></div><div class="apple"></div></div><div class="model">12 Pro Max 128GB</div><div class="price">180 000F</div><button class="btn" onclick="cmd('12 Pro Max 128GB','180 000F')">COMMANDER</button></div>
 </div></div></div>
 
-<div class="colonne"><div class="colonne-titre">COLONNE 4: iPhone 15 Pro Max <span>380 000F</span></div><div class="scroller"><div class="track">
-<div class="card"><div class="img" style="background:#fde68a">📱</div><div class="model">15 Pro Max 256GB</div><div class="price">380 000F</div><button class="btn" onclick="cmd('15 Pro Max','380 000F')">COMMANDER</button></div>
-<div class="card"><div class="img" style="background:#fde68a">📱</div><div class="model">15 Pro Max 256GB</div><div class="price">380 000F</div><button class="btn" onclick="cmd('15 Pro Max','380 000F')">COMMANDER</button></div>
-<div class="card"><div class="img" style="background:#fde68a">📱</div><div class="model">15 Pro Max 256GB</div><div class="price">380 000F</div><button class="btn" onclick="cmd('15 Pro Max','380 000F')">COMMANDER</button></div>
+<div class="colonne"><div class="colonne-titre">COLONNE 4: 13 Pro Max 128GB <span>230 000F</span></div><div class="scroller"><div class="track">
+<div class="card"><div class="iphone blue"><div class="notch"></div><div class="cam-block"><i></i><i></i><i></i></div><div class="flash"></div><div class="apple"></div></div><div class="model">13 Pro Max 128GB</div><div class="price">230 000F</div><button class="btn" onclick="cmd('13 Pro Max','230 000F')">COMMANDER</button></div>
+<div class="card"><div class="iphone blue"><div class="notch"></div><div class="cam-block"><i></i><i></i><i></i></div><div class="flash"></div><div class="apple"></div></div><div class="model">13 Pro Max 128GB</div><div class="price">230 000F</div><button class="btn" onclick="cmd('13 Pro Max','230 000F')">COMMANDER</button></div>
+<div class="card"><div class="iphone blue"><div class="notch"></div><div class="cam-block"><i></i><i></i><i></i></div><div class="flash"></div><div class="apple"></div></div><div class="model">13 Pro Max 128GB</div><div class="price">230 000F</div><button class="btn" onclick="cmd('13 Pro Max','230 000F')">COMMANDER</button></div>
 </div></div></div>
 
-<div class="colonne"><div class="colonne-titre">COLONNE 5: iPhone 16 Pro Max <span>570 000F</span></div><div class="scroller"><div class="track">
-<div class="card"><div class="img" style="background:#fecaca">📱</div><div class="model">16 Pro Max 256GB</div><div class="price">570 000F</div><button class="btn" onclick="cmd('16 Pro Max','570 000F')">COMMANDER</button></div>
-<div class="card"><div class="img" style="background:#fecaca">📱</div><div class="model">16 Pro Max 256GB</div><div class="price">570 000F</div><button class="btn" onclick="cmd('16 Pro Max','570 000F')">COMMANDER</button></div>
-<div class="card"><div class="img" style="background:#fecaca">📱</div><div class="model">16 Pro Max 256GB</div><div class="price">570 000F</div><button class="btn" onclick="cmd('16 Pro Max','570 000F')">COMMANDER</button></div>
+<div class="colonne"><div class="colonne-titre">COLONNE 5: 14 Pro Max 256GB <span>330 000F</span></div><div class="scroller"><div class="track">
+<div class="card"><div class="iphone purple"><div class="notch"></div><div class="cam-block"><i></i><i></i><i></i></div><div class="flash"></div><div class="apple"></div></div><div class="model">14 Pro Max 256GB</div><div class="price">330 000F</div><button class="btn" onclick="cmd('14 Pro Max','330 000F')">COMMANDER</button></div>
+<div class="card"><div class="iphone purple"><div class="notch"></div><div class="cam-block"><i></i><i></i><i></i></div><div class="flash"></div><div class="apple"></div></div><div class="model">14 Pro Max 256GB</div><div class="price">330 000F</div><button class="btn" onclick="cmd('14 Pro Max','330 000F')">COMMANDER</button></div>
+<div class="card"><div class="iphone purple"><div class="notch"></div><div class="cam-block"><i></i><i></i><i></i></div><div class="flash"></div><div class="apple"></div></div><div class="model">14 Pro Max 256GB</div><div class="price">330 000F</div><button class="btn" onclick="cmd('14 Pro Max','330 000F')">COMMANDER</button></div>
 </div></div></div>
 
-<div class="colonne"><div class="colonne-titre">COLONNE 6: iPhone 17 Pro Max <span>800 000F</span></div><div class="scroller"><div class="track">
-<div class="card"><div class="img" style="background:#ddd6fe">📱</div><div class="model">17 Pro Max 256GB</div><div class="price">800 000F</div><button class="btn" onclick="cmd('17 Pro Max','800 000F')">COMMANDER</button></div>
-<div class="card"><div class="img" style="background:#ddd6fe">📱</div><div class="model">17 Pro Max 256GB</div><div class="price">800 000F</div><button class="btn" onclick="cmd('17 Pro Max','800 000F')">COMMANDER</button></div>
-<div class="card"><div class="img" style="background:#ddd6fe">📱</div><div class="model">17 Pro Max 256GB</div><div class="price">800 000F</div><button class="btn" onclick="cmd('17 Pro Max','800 000F')">COMMANDER</button></div>
+<div class="colonne"><div class="colonne-titre">COLONNE 6: 15 Pro Max 256GB <span>380 000F</span></div><div class="scroller"><div class="track">
+<div class="card"><div class="iphone gold"><div class="notch"></div><div class="cam-block"><i></i><i></i><i></i></div><div class="flash"></div><div class="apple"></div></div><div class="model">15 Pro Max 256GB</div><div class="price">380 000F</div><button class="btn" onclick="cmd('15 Pro Max','380 000F')">COMMANDER</button></div>
+<div class="card"><div class="iphone gold"><div class="notch"></div><div class="cam-block"><i></i><i></i><i></i></div><div class="flash"></div><div class="apple"></div></div><div class="model">15 Pro Max 256GB</div><div class="price">380 000F</div><button class="btn" onclick="cmd('15 Pro Max','380 000F')">COMMANDER</button></div>
+<div class="card"><div class="iphone gold"><div class="notch"></div><div class="cam-block"><i></i><i></i><i></i></div><div class="flash"></div><div class="apple"></div></div><div class="model">15 Pro Max 256GB</div><div class="price">380 000F</div><button class="btn" onclick="cmd('15 Pro Max','380 000F')">COMMANDER</button></div>
 </div></div></div>
 
-<div class="colonne"><div class="colonne-titre">COLONNE 7: iPhone 18 Pro Max <span>1 250 000F</span></div><div class="scroller"><div class="track">
-<div class="card"><div class="img" style="background:#ffcc00">📱</div><div class="model">18 Pro Max 256GB</div><div class="price">1 250 000F</div><button class="btn" onclick="cmd('18 Pro Max','1 250 000F')">COMMANDER</button></div>
-<div class="card"><div class="img" style="background:#ffcc00">📱</div><div class="model">18 Pro Max 256GB</div><div class="price">1 250 000F</div><button class="btn" onclick="cmd('18 Pro Max','1 250 000F')">COMMANDER</button></div>
-<div class="card"><div class="img" style="background:#ffcc00">📱</div><div class="model">18 Pro Max 256GB</div><div class="price">1 250 000F</div><button class="btn" onclick="cmd('18 Pro Max','1 250 000F')">COMMANDER</button></div>
+<div class="colonne"><div class="colonne-titre">COLONNE 7: 16 Pro Max 256GB <span>570 000F</span></div><div class="scroller"><div class="track">
+<div class="card"><div class="iphone black"><div class="notch"></div><div class="cam-block"><i></i><i></i><i></i></div><div class="flash"></div><div class="apple"></div></div><div class="model">16 Pro Max 256GB</div><div class="price">570 000F</div><button class="btn" onclick="cmd('16 Pro Max','570 000F')">COMMANDER</button></div>
+<div class="card"><div class="iphone black"><div class="notch"></div><div class="cam-block"><i></i><i></i><i></i></div><div class="flash"></div><div class="apple"></div></div><div class="model">16 Pro Max 256GB</div><div class="price">570 000F</div><button class="btn" onclick="cmd('16 Pro Max','570 000F')">COMMANDER</button></div>
+<div class="card"><div class="iphone black"><div class="notch"></div><div class="cam-block"><i></i><i></i><i></i></div><div class="flash"></div><div class="apple"></div></div><div class="model">16 Pro Max 256GB</div><div class="price">570 000F</div><button class="btn" onclick="cmd('16 Pro Max','570 000F')">COMMANDER</button></div>
 </div></div></div>
 
-<div class="footer">DAOUDI MULTI SERVICES - Ouaga<br><a href="https://wa.me/22657864908">💬 WhatsApp: 57 86 49 08 / 67 49 48 98</a></div>
+<div class="colonne"><div class="colonne-titre">COLONNE 8: 17 Pro Max 256GB <span>800 000F</span></div><div class="scroller"><div class="track">
+<div class="card"><div class="iphone titan"><div class="notch"></div><div class="cam-block"><i></i><i></i><i></i></div><div class="flash"></div><div class="apple"></div></div><div class="model">17 Pro Max 256GB</div><div class="price">800 000F</div><button class="btn" onclick="cmd('17 Pro Max','800 000F')">COMMANDER</button></div>
+<div class="card"><div class="iphone titan"><div class="notch"></div><div class="cam-block"><i></i><i></i><i></i></div><div class="flash"></div><div class="apple"></div></div><div class="model">17 Pro Max 256GB</div><div class="price">800 000F</div><button class="btn" onclick="cmd('17 Pro Max','800 000F')">COMMANDER</button></div>
+<div class="card"><div class="iphone titan"><div class="notch"></div><div class="cam-block"><i></i><i></i><i></i></div><div class="flash"></div><div class="apple"></div></div><div class="model">17 Pro Max 256GB</div><div class="price">800 000F</div><button class="btn" onclick="cmd('17 Pro Max','800 000F')">COMMANDER</button></div>
+</div></div></div>
+
+<div class="footer">DAOUDI MULTI SERVICES - Ouaga Zabr-Daaga<br><a href="https://wa.me/22657864908">💬 WhatsApp: 57 86 49 08 / 67 49 48 98</a></div>
 <script>
 function cmd(m,p){window.open("https://wa.me/22657864908?text="+encodeURIComponent("Bonjour Daoudi 👋 Je veux commander "+m+" à "+p+" svp"),"_blank");}
-document.querySelectorAll('.scroller').forEach(function(s,i){
+document.querySelectorAll('.scroller').forEach(function(s){
   let pos=0, dir=1;
   setInterval(function(){
-    pos += dir*160;
-    if(pos >= s.scrollWidth - s.clientWidth - 10){dir=-1}
-    if(pos <= 0){dir=1; pos=0}
+    pos+=dir*180;
+    if(pos>=s.scrollWidth - s.clientWidth - 5) dir=-1;
+    if(pos<=0){dir=1; pos=0;}
     s.scrollTo({left:pos,behavior:'smooth'});
-  }, 5000);
+  },5000);
 });
 </script>
 </body></html>
